@@ -76,3 +76,4 @@ popd
 # End of interface IP configuration
 
 sssssssssssssss
+test	gpo
