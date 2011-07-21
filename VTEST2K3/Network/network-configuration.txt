@@ -1,0 +1,78 @@
+#========================
+# Interface configuration
+#========================
+pushd interface
+
+reset all
+
+
+popd
+# End of interface configuration
+
+#========================
+# Interface configuration
+#========================
+pushd interface ipv6
+
+uninstall
+
+
+popd
+# End of interface configuration
+
+
+
+# ----------------------------------
+# ISATAP Configuration
+# ----------------------------------
+pushd interface ipv6 isatap
+
+
+
+popd
+# End of ISATAP configuration
+
+
+
+# ----------------------------------
+# 6to4 Configuration
+# ----------------------------------
+pushd interface ipv6 6to4
+
+reset
+
+
+
+popd
+# End of 6to4 configuration
+
+#========================
+# Port Proxy configuration
+#========================
+pushd interface portproxy
+
+reset
+
+
+popd
+# End of Port Proxy configuration
+
+
+
+# ---------------------------------- 
+# Interface IP Configuration         
+# ---------------------------------- 
+pushd interface ip
+
+
+# Interface IP Configuration for "Local Area Connection"
+
+set address name="Local Area Connection" source=dhcp 
+set dns name="Local Area Connection" source=dhcp register=PRIMARY
+set wins name="Local Area Connection" source=dhcp
+
+
+popd
+# End of interface IP configuration
+
+
